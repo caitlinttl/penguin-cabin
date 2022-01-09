@@ -99,7 +99,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Calibri';
+		font-family: 'Calibri', 'Microsoft JhengHei';
 		font-weight: 300;
 		color: #414141;
 		font-size: 16pt;
@@ -1609,6 +1609,7 @@ input, select, textarea {
 
 		.box footer ul.actions {
 			margin-bottom: 0;
+			text-align: center;
 		}
 
 /* penguinpic */
@@ -2122,7 +2123,7 @@ input, select, textarea {
 			font-size: 2.5em;
 			letter-spacing: -0.035em;
 			line-height: 1;
-			font-family: 'MV Boli';
+			font-family: 'MV Boli', 'Calibri';
 		}
 
 /* Nav */
@@ -2915,7 +2916,7 @@ input, select, textarea {
 					font-weight: 900;
 					font-size: 1.75em;
 					letter-spacing: -0.035em;
-					font-family: 'MV Boli';
+					font-family: 'MV Boli', 'Calibri';
 				}
 
 		/* Intro */
