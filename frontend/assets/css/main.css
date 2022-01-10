@@ -2399,7 +2399,7 @@ input, select, textarea {
 	}
 
 		#copyright ul.links {
-			display: inline-block;
+			display: block;
 			background: #2C2929;
 			background: #f7f7f7;
 			color: #353434;
