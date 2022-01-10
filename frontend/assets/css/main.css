@@ -148,6 +148,13 @@ input, select, textarea {
 		font-weight: 700;
 		text-align: center;
 	}
+	
+	h9 {
+		color: #020202;
+		font-weight: 700;
+		text-align: center;
+	}
+
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
 		text-decoration: none;
@@ -320,6 +327,11 @@ input, select, textarea {
 
 		.row > .col-7 {
 			width: 58.33333%;
+		}
+		
+		.row > .col-7-center {
+			width: 58.33333%;
+			margin: auto;
 		}
 
 		.row > .off-7 {
@@ -1066,9 +1078,14 @@ input, select, textarea {
 				.row > .off-8-medium {
 					margin-left: 66.66667%;
 				}
-
+				
 				.row > .col-9-medium {
 					width: 75%;
+				}
+
+				.row > .col-9-medium-center {
+					width: 75%;
+					margin: auto;
 				}
 
 				.row > .off-9-medium {
@@ -1482,11 +1499,11 @@ input, select, textarea {
 		}
 
 	form textarea {
-		height: 15em;
+		height: 10em;
 	}
 
 	form ::-webkit-input-placeholder {
-		color: #555 !important;
+		color: rgb(185, 185, 185) !important;
 	}
 
 	form :-moz-placeholder {
@@ -1560,7 +1577,7 @@ input, select, textarea {
 			text-align: center;
 			border-top: solid 1px #ccc;
 			top: 1em;
-			margin: 0 0 3em 0;
+			margin: 0 0 2em 0;
 		}
 
 			header.major h2 {
@@ -2389,6 +2406,15 @@ input, select, textarea {
 	margin: 1em 0 1em 0;
 }
 
+#editicon img {
+	text-align: center;
+	display: block;
+	width: 75px;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
 
 
 /* Copyright */
@@ -2970,3 +2996,52 @@ input, select, textarea {
 			}
 
 	}
+
+
+
+/*mes-send*/
+.mes-send {
+    padding: .65em;
+    border: 1px solid rgba(204, 204, 204, 0);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.form-group { padding: 1em; }
+.form-group label { 
+	vertical-align: top; 
+	font-family: 'Calibri', 'Microsoft JhengHei';
+    font-weight: 700;
+}
+
+.mes-send input[type="text"],
+.mes-send textarea {
+	font-family: 'Calibri', 'Microsoft JhengHei';
+	font-weight: 400;
+    padding: 1px;
+    width: 100%;
+    border: 1px solid #b7b7b7;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+	outline: none;
+}
+
+.mes-send input { height: 2em; }
+
+/* #btn {
+    margin-left: 1.25em;
+    padding: 5px;
+    border: none;
+    -webkit-border-radius: 1.25em;
+    -moz-border-radius: 1.25em;
+    border-radius: 1.25em;
+    width: 15%;
+    font-size: 12pt;
+    color: #fff;
+    background-color: #66f;
+    cursor: pointer;
+}
+#btn:hover { background-color: #03c; } */
+
