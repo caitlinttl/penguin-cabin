@@ -2194,7 +2194,7 @@ input, select, textarea {
 			font-size: 2.5em;
 			letter-spacing: -0.035em;
 			line-height: 1;
-			font-family: 'MV Boli', 'Calibri';
+			font-family: 'MV Boli', 'Calibri', 'Microsoft JhengHei';
 		}
 
 /* Nav */
@@ -2222,7 +2222,7 @@ input, select, textarea {
 					color: #5d5d5d;
 					font-weight:bold;
 					text-decoration: none;
-					padding: 0.6em 1em 0.6em 1em;
+					padding: 0.6em 0.6em 0.6em 0.6em;
 					-moz-transition: background-color .25s ease-in-out;
 					-webkit-transition: background-color .25s ease-in-out;
 					-ms-transition: background-color .25s ease-in-out;
