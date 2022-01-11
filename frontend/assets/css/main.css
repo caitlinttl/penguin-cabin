@@ -137,6 +137,14 @@ input, select, textarea {
 		color: #252122;
 		font-weight: 700;
 	}
+	
+	h3center {
+		color: #212325;
+		font-weight: 700;
+		text-align: center;
+		display: block;
+		font-size: 1.35em;
+	}
 
 	h7 {
 		color: #797979;
@@ -154,7 +162,11 @@ input, select, textarea {
 		font-weight: 700;
 		text-align: center;
 	}
-
+	
+	h10 {
+		color: #5a5a5a;
+		font-weight: 500;
+	}
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
 		text-decoration: none;
@@ -303,6 +315,20 @@ input, select, textarea {
 
 		.row > .col-4 {
 			width: 33.33333%;
+		}
+
+		.row > .col-4-center {
+			width: 30%;
+			margin: auto;
+			padding: 50px 0 0 50px;
+			border-bottom: none;
+		}
+
+		.row > .col-4-center-info {
+			width: 60%;
+			margin: auto;
+			padding: 50px 0 0 50px;
+			border-bottom: none;
 		}
 
 		.row > .off-4 {
@@ -1043,6 +1069,20 @@ input, select, textarea {
 					width: 33.33333%;
 				}
 
+				.row > .col-4-medium-center {
+					width: 40%;
+					margin: auto;
+					padding: 40px 0 0 40px;
+					border-bottom: none;				
+				}
+
+				.row > .col-4-medium-center-info {
+					width: 60%;
+					margin: auto;
+					padding: 40px 0 0 40px;
+					border-bottom: none;				
+				}
+
 				.row > .off-4-medium {
 					margin-left: 33.33333%;
 				}
@@ -1339,6 +1379,20 @@ input, select, textarea {
 
 				.row > .col-10-small {
 					width: 83.33333%;
+				}
+
+				.row > .col-10-small-center {
+					width: 75%;
+					margin: auto;
+					padding: 20px 0 0 20px;
+					border-bottom: none;				
+				}
+
+				.row > .col-10-small-center-info {
+					width: 85%;
+					margin: auto;
+					padding: 20px 0 0 20px;
+					border-bottom: none;				
 				}
 
 				.row > .off-10-small {
@@ -2406,6 +2460,7 @@ input, select, textarea {
 	margin: 1em 0 1em 0;
 }
 
+/* Edit button icon */
 #editicon {
 	text-align: center;
 	display: block;
@@ -2424,6 +2479,13 @@ input, select, textarea {
 	margin-right: auto;
 	}
 
+
+/* Penguin intro box */
+#penguinintrobox {
+	background: #ffffff00;
+	border-bottom: none;
+	margin: 1em 1em 1em 1em;
+	}
 
 
 /* Copyright */
