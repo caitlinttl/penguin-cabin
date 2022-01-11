@@ -2692,6 +2692,7 @@ input, select, textarea {
 						text-align: center;
 						background: rgba(150, 150, 150, 0.75);
 						border-radius: 5px;
+						display: none;
 					}
 
 					#titleBar .toggle:active:before {
