@@ -1,18 +1,17 @@
 
-
 Penguin Cabin
 ---
  
-        Introduce the eighteen kinds of penguins in the world.
-        - node.js
-        - express
+Introduce the eighteen kinds of penguins in the world.
+- node.js
+- express
 
 
 ---
 
 Deploy on Heroku.
 
-Created by `Caitlin`, Hsinchu, Taiwan, 2022.
+Created by Caitlin, Hsinchu, Taiwan, 2022.
 
 ---
 
