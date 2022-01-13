@@ -9,7 +9,8 @@ Introduce the eighteen kinds of penguins in the world.
 
 ---
 
-Deploy on Heroku.
+https://penguincabin.herokuapp.com/
+<!-- Deploy on Heroku. -->
 
 Created by Caitlin, Hsinchu, Taiwan, 2022.
 
