@@ -9,132 +9,127 @@
 
 <url>
   <loc>https://penguincabin.herokuapp.com/</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/index.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/map</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/map.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/news</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/news.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/message</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/message.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/emperor</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/emperor.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/king</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/king.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/littleBlue</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/littleBlue.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/adelie</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/adelie.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/chinstrap</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/chinstrap.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/gentoo</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/gentoo.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/african</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/african.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/humboldt</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/humboldt.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/magellanic</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/magellanic.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/galapagos</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/galapagos.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/macaroni</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/macaroni.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/royal</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/royal.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/yellowEyed</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/yellowEyed.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/fiordland</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/fiordland.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/erectCrested</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/erectCrested.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/snares</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/snares.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/northernRockhopper</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/northernRockhopper.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/southernRockhopper</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/penguins/southernRockhopper.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://penguincabin.herokuapp.com/edit/add-news.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/add-news</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/edit/add-message.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/add-message</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://penguincabin.herokuapp.com/edit/add-pengins-photo.html</loc>
-  <lastmod>2022-01-13T02:01:53+00:00</lastmod>
+  <loc>https://penguincabin.herokuapp.com/add-pengins-photo</loc>
+  <lastmod>2022-01-17T19:00:31+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
