@@ -138,6 +138,7 @@ input, select, textarea {
 		font-weight: 700;
 	}
 	
+	/* penguins introduction title */
 	h3center {
 		color: #212325;
 		font-weight: 700;
@@ -146,11 +147,13 @@ input, select, textarea {
 		font-size: 1.35em;
 	}
 
+	/* 18 kinds of penguins */
 	h7 {
 		color: #797979;
 		font-weight: 700;
 	}
 	
+	/* Top */
 	h8 {
 		color: #68b3d3;
 		font-weight: 700;
@@ -163,6 +166,7 @@ input, select, textarea {
 		text-align: center;
 	}
 	
+	/* penguins introduction text */
 	h10 {
 		color: #5a5a5a;
 		font-weight: 500;
@@ -172,6 +176,13 @@ input, select, textarea {
 		color: #2b2b2b;
 		font-weight: 200;
 		font-size: 1.5em;
+	}
+
+	/* For timestamp */
+	h12 {
+		color: #808080;
+		font-weight: 200;
+		font-size: 100%;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
