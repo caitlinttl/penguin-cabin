@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	Design by Caitlin
+-->
+<html>
+	<head>
+		<%- include ("../partials/header.ejs") %>	
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="/">Penguin Cabin</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="/">Penguins</a></li>
+								<li><a href="/map">Map</a></li>
+								<li><a href="/news">News</a></li>
+								<li class="current"><a href="/message">Message</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+			<section id="main">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+
+							<!-- Portfolio -->
+								<section>
+									<header class="major">
+										<h2>Message Board</h2>
+									</header>
+									
+									<div id="editicon">
+										<a href="/add-message"><img src="images/edit.png" alt="" title="Write a Message"/></a>
+									</div>
+
+									<div class="row">
+
+										<div class="col-4 col-6-medium col-12-small">
+											<section class="box">
+												<header>
+													<h3>Test</h3>
+													<h12>2022-01-17 20:25</h12>
+												</header>
+												<p>Content...</p>
+											</section>
+										</div>
+										
+										<div class="col-4 col-6-medium col-12-small">
+											<section class="box">
+												<header>
+													<h3>Test</h3>
+													<h12>2021-01-15 20:25</h12>
+												</header>
+												<p>Content...</p>
+											</section>
+										</div>
+
+										<div class="col-4 col-6-medium col-12-small">
+											<section class="box">
+												<header>
+													<h3>Caitlin</h3>
+													<h12>2021-01-10 04:21</h12>
+												</header>
+												<p>Hello! I am a penguin person!</p>
+											</section>
+										</div>
+
+										
+
+
+									</div>
+								</section>
+
+						</div>
+						<div class="col-12">
+
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<%- include ("../partials/footer.ejs") %>	
+
+		
+
+	</div>
+
+	<!-- Scripts -->
+	<%- include ("../partials/scripts.ejs") %>	
+
+</body>
+</html>

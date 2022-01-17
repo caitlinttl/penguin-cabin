@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	Design by Caitlin
+-->
+<html>
+	<head>
+		<%- include ("../partials/header.ejs") %>	
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Penguin header -->
+			<%- include ("../partials/penguin-header.ejs") %>	
+
+
+			<!-- Main -->
+			<section id="main">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+
+							<!-- Portfolio -->
+								<section>
+									<header class="major">
+                                        <!-- TODO Add for Specified penguin-->
+										<h2>Add photo for Specified penguin</h2>
+									</header>
+									
+
+									<div class="row">
+
+										<div class="col-7-center col-9-medium-center col-12-small">
+											<section class="box">
+
+                                                <section class="mes-send">
+                                                    <form method="post" action="send.php">
+                                                        
+                                                        <div class="form-group">
+                                                            <label for="penguin_photo">Photo Url<span style="color: rgb(226, 35, 35);">*</span>:</label>
+                                                            <input type="text" id="penguin_photo" name="penguin_photo" placeholder="Ex: https://example/xxx.png">
+                                                         </div>
+
+                                                         <footer>
+                                                            <ul class="actions">
+                                                                <li><a href="" class="button alt">Submit</a></li>
+                                                                <li><a onclick="history.back()" class="button alt">Cancel</a></li>
+                                                            </ul>
+                                                        </footer>
+                                                                 
+                                                    </form>
+                                                </section>       
+
+											</section>
+										</div>
+
+
+									</div>
+								</section>
+
+						</div>
+						<div class="col-12">
+
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<%- include ("../partials/footer.ejs") %>	
+		
+
+		</div>
+
+	<!-- Scripts -->
+	<%- include ("../partials/scripts.ejs") %>	
+			
+
+
+</body>
+</html>
