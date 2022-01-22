@@ -45,7 +45,7 @@ async function readNewsData(docID, sheetID, credentialsPath = './penguin-cabin-c
         r[2] = 'images/news_default_penguin.jpg'
       }
     }
-    
+
     return result.reverse();
 };
 
@@ -91,5 +91,7 @@ module.exports = {
   readNewsData,
   readMessageData,
   addPenguinPhotoData,
+  // addNewsData,
+  // addMessageData,
 };
 

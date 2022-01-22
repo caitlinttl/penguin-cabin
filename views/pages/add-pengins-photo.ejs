@@ -24,7 +24,7 @@
 								<section>
 									<header class="major">
                                         <!-- TODO Add for Specified penguin-->
-										<h2>Add photo for Specified penguin</h2>
+										<h2>Add a photo for penguin</h2>
 									</header>
 									
 
@@ -36,6 +36,30 @@
                                                 <section class="mes-send">
                                                     <form method="post" action="send.php">
                                                         
+                                                        <div class="form-group">
+                                                            <label for="penguin_kind">Penguin:</label>
+															<select name="penguin_kind">
+																<option value="Emperor">Emperor 帝王</option>
+																<option value="King">King 國王</option>
+																<option value="LittleBlue">LittleBlue 小藍</option>
+																<option value="adelie">Adelie 阿德利</option>
+																<option value="chinstrap">Chinstrap 頰帶</option>
+																<option value="gentoo">Gentoo 巴布亞</option>
+																<option value="african">African 黑腳</option>
+																<option value="humboldt">Humboldt 洪堡德</option>
+																<option value="magellanic">Magellanic 麥哲倫</option>
+																<option value="galapagos">Galapagos 加拉帕戈</option>
+																<option value="macaroni">Macaroni 馬可羅尼</option>
+																<option value="royal">Royal 皇家</option>
+																<option value="yellowEyed">YellowEyed 黃眼</option>
+																<option value="fiordland">Fiordland 福德蘭</option>
+																<option value="erectCrested">ErectCrested 冠毛</option>
+																<option value="snares">Snares 史納爾島</option>
+																<option value="northernRockhopper">NorthernRockhopper 北跳岩</option>
+																<option value="southernRockhopper">SouthernRockhopper 南跳岩</option>
+															</select>
+                                                         </div>
+
                                                         <div class="form-group">
                                                             <label for="penguin_photo">Photo Url<span style="color: rgb(226, 35, 35);">*</span>:</label>
                                                             <input type="text" id="penguin_photo" name="penguin_photo" placeholder="Ex: https://example/xxx.png">
