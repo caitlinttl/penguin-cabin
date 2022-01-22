@@ -1,0 +1,11 @@
+<!-- photos -->
+<div class="row">
+    <% for(let i = 0; i < photoUrl.length; i++) { %>
+        <div class="col-4 col-6-medium col-12-small">
+            <section class="penguinpic"><a class="image featured">
+                <img src=<%= photoUrl[i]%> alt="Image not found…" title="index <%= i+2%>"/>
+            </a></section>
+        </div>
+    <% } %>
+</div>
+

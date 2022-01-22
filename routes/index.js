@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const penguinsController = require('../controllers/penguins')
 
 /* GET home page. */
 router.get('/', (req, res) => res.render('pages/index'))
@@ -22,25 +23,24 @@ router.get('/add-news', (req, res) => res.render('pages/add-news'))
 router.get('/add-message', (req, res) => res.render('pages/add-message'))
 
 /* GET edit penguins page. */
-router.get('/emperor', (req, res) => res.render('pages/penguins/emperor'))
-router.get('/king', (req, res) => res.render('pages/penguins/king'))
-router.get('/littleBlue', (req, res) => res.render('pages/penguins/littleBlue'))
-router.get('/adelie', (req, res) => res.render('pages/penguins/adelie'))
-router.get('/chinstrap', (req, res) => res.render('pages/penguins/chinstrap'))
-router.get('/gentoo', (req, res) => res.render('pages/penguins/gentoo'))
-router.get('/african', (req, res) => res.render('pages/penguins/african'))
-router.get('/humboldt', (req, res) => res.render('pages/penguins/humboldt'))
-router.get('/magellanic', (req, res) => res.render('pages/penguins/magellanic'))
-router.get('/galapagos', (req, res) => res.render('pages/penguins/galapagos'))
-router.get('/macaroni', (req, res) => res.render('pages/penguins/macaroni'))
-router.get('/royal', (req, res) => res.render('pages/penguins/royal'))
-router.get('/yellowEyed', (req, res) => res.render('pages/penguins/yellowEyed'))
-router.get('/fiordland', (req, res) => res.render('pages/penguins/fiordland'))
-router.get('/erectCrested', (req, res) => res.render('pages/penguins/erectCrested'))
-router.get('/snares', (req, res) => res.render('pages/penguins/snares'))
-router.get('/northernRockhopper', (req, res) => res.render('pages/penguins/northernRockhopper'))
-router.get('/southernRockhopper', (req, res) => res.render('pages/penguins/southernRockhopper'))
-
+router.get('/emperor', penguinsController.emperor)
+router.get('/king', penguinsController.king)
+router.get('/littleBlue', penguinsController.littleBlue)
+router.get('/adelie', penguinsController.adelie)
+router.get('/chinstrap', penguinsController.chinstrap)
+router.get('/gentoo', penguinsController.gentoo)
+router.get('/african', penguinsController.african)
+router.get('/humboldt', penguinsController.humboldt)
+router.get('/magellanic', penguinsController.magellanic)
+router.get('/galapagos', penguinsController.galapagos)
+router.get('/macaroni', penguinsController.macaroni)
+router.get('/royal', penguinsController.royal)
+router.get('/yellowEyed', penguinsController.yellowEyed)
+router.get('/fiordland', penguinsController.fiordland)
+router.get('/erectCrested', penguinsController.erectCrested)
+router.get('/snares', penguinsController.snares)
+router.get('/northernRockhopper', penguinsController.northernRockhopper)
+router.get('/southernRockhopper', penguinsController.southernRockhopper)
 
 
 module.exports = router;
