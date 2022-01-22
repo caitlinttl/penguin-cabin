@@ -1758,17 +1758,19 @@ input, select, textarea {
 		cursor: pointer;
 		border: 0;
 		border-radius: 5px;
-		background: #d52349;
+		background: #b4dcee;
 		color: rgb(68, 68, 68) !important;
 		font-weight: 700;
 		outline: 0;
 		font-size: 1.1em;
+		font-family: 'Calibri', 'Microsoft JhengHei';
 		padding: 0.65em 1.5em 0.65em 1.5em;
 		text-align: center;
 		-moz-transition: background-color .25s ease-in-out;
 		-webkit-transition: background-color .25s ease-in-out;
 		-ms-transition: background-color .25s ease-in-out;
 		transition: background-color .25s ease-in-out;
+		line-height: inherit;
 	}
 
 		input[type="button"]:hover,
@@ -1776,7 +1778,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #e53359;
+			background: #e0e0e0;
 		}
 
 		input[type="button"]:active,
@@ -1784,7 +1786,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #c51349;
+			background: #9db6db;
 		}
 
 		input[type="button"].alt,
@@ -1808,7 +1810,7 @@ input, select, textarea {
 			input[type="reset"].alt:active,
 			button.alt:active,
 			.button.alt:active {
-				background: #151112;
+				background: #9db6db;
 			}
 
 		input[type="button"].icon:before,

@@ -54,7 +54,8 @@
 														<h3><%= message[i][0]%></h3>
 														<h12><%= message[i][2]%></h12>
 													</header>
-													<p><%= message[i][1]%></p>
+													<% var data = message[i][1] %>
+													<p><%- data.replace(/\r\n/g, '<br/>') %></p>
 												</section>
 											</div>
 										<% } %>

@@ -9,8 +9,9 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
  * @param  {String} credentialsPath the credentials path defalt is './credentials.json'
  */
 
+ const keyPath = './penguin-cabin-credentials.json'
 
-async function readPenguinPhotoData(docID, sheetID, credentialsPath = './penguin-cabin-credentials.json') {
+async function readPenguinPhotoData(docID, sheetID, credentialsPath=keyPath) {
     const result = [];
     const doc = new GoogleSpreadsheet(docID);
     const creds = require(credentialsPath);
@@ -26,7 +27,7 @@ async function readPenguinPhotoData(docID, sheetID, credentialsPath = './penguin
     return result;
 };
 
-async function readNewsData(docID, sheetID, credentialsPath = './penguin-cabin-credentials.json') {
+async function readNewsData(docID, sheetID, credentialsPath=keyPath) {
     const result = [];
     const doc = new GoogleSpreadsheet(docID);
     const creds = require(credentialsPath);
@@ -40,17 +41,19 @@ async function readNewsData(docID, sheetID, credentialsPath = './penguin-cabin-c
     result.push(row._rawData);
     }
 
+    // set default for new photo
     for (r of result) {
       if ( !r[2] ) {
         r[2] = 'images/news_default_penguin.jpg'
       }
     }
 
+    // reverse order
     return result.reverse();
 };
 
-async function readMessageData(docID, sheetID, credentialsPath = './penguin-cabin-credentials.json') {
-    const result = [];
+async function readMessageData(docID, sheetID, credentialsPath=keyPath) {
+    var result = [];
     const doc = new GoogleSpreadsheet(docID);
     const creds = require(credentialsPath);
     await doc.useServiceAccountAuth(creds);
@@ -62,28 +65,57 @@ async function readMessageData(docID, sheetID, credentialsPath = './penguin-cabi
     for (row of rows) {
     result.push(row._rawData);
     }
+
+    // reserve top and reverse order
+    top = result[0]
+    result.shift()
+    result = result.reverse()
+    result.unshift(top)
+
     return result;
 };
 
 
-async function addPenguinPhotoData(docID, sheetID, credentialsPath = './penguin-cabin-credentials.json') {
-  const result = [];
+async function addPenguinPhotoData(docID, sheetID, photoUrl, credentialsPath=keyPath) {
   const doc = new GoogleSpreadsheet(docID);
   const creds = require(credentialsPath);
   await doc.useServiceAccountAuth(creds);
   await doc.loadInfo();
   const sheet = doc.sheetsById[sheetID];
-  //   console.log(rows)
-  const rows = await sheet.getRows();
 
 // addRow
-  const larryRow = await sheet.addRow({ Title: 'Larry Page', Url: 'larry@google.com' });
   const moreRows = await sheet.addRows([
-      { Title: 'Sergey Brin', Photo: 'sergey@google.com' },
-      { Title: 'Eric Schmidt', Tagsddd: 'eric@google.com' },
+      { penguin_photo_url: photoUrl }
   ]);
 
-  return result;
+};
+
+async function addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags, credentialsPath=keyPath) {
+  const doc = new GoogleSpreadsheet(docID);
+  const creds = require(credentialsPath);
+  await doc.useServiceAccountAuth(creds);
+  await doc.loadInfo();
+  const sheet = doc.sheetsById[sheetID];
+  
+  // addRow
+  const moreRows = await sheet.addRows([
+    { news_title: newsTitle, news_url: newsUrl, news_photo_url: newsPhotoUrl, news_content: newsContent, news_tags: newsTags },
+  ]);
+
+};
+
+async function addMessageData(docID, sheetID, userName, userMessage, timestamp, credentialsPath=keyPath) {
+  const doc = new GoogleSpreadsheet(docID);
+  const creds = require(credentialsPath);
+  await doc.useServiceAccountAuth(creds);
+  await doc.loadInfo();
+  const sheet = doc.sheetsById[sheetID];
+
+// addRow
+  const moreRows = await sheet.addRows([
+    { user_name: userName, user_message: userMessage, timestamp: timestamp},
+  ]);
+
 };
 
 module.exports = {
@@ -91,7 +123,8 @@ module.exports = {
   readNewsData,
   readMessageData,
   addPenguinPhotoData,
-  // addNewsData,
-  // addMessageData,
+  addNewsData,
+  addMessageData,
+
 };
 

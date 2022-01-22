@@ -47,19 +47,19 @@
 											<section class="box">
 
                                                 <section class="mes-send">
-                                                    <form method="post" action="send.php">
+                                                    <form method="post" action="/add-message">
                                                         <div class="form-group">
                                                             <label for="user_name">Name:</label>
                                                             <input type="text" id="user_name" name="user_name" placeholder="Your Name" required="required">
                                                          </div>
                                                          <div class="form-group">
-                                                            <label for="user_mes">Message:</label>
-                                                            <textarea id="user_mes" name="user_mes" placeholder="Write anything!" ></textarea>
+                                                            <label for="user_message">Message:</label>
+                                                            <textarea id="user_message" name="user_message" placeholder="Write anything!" ></textarea>
                                                          </div>
 
                                                          <footer>
                                                             <ul class="actions">
-                                                                <li><a href="" class="button alt">Submit</a></li>
+																<li><button type="submit" class="button alt">Submit</button></li>
                                                                 <li><a onclick="history.back()" class="button alt">Cancel</a></li>
                                                             </ul>
                                                         </footer>

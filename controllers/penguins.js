@@ -1,5 +1,6 @@
 // import penguins data from model
 const penguinsPhotoModel = require('../models/penguins')
+const bodyParser = require('body-parser')
 
 const penguinsController = {
   emperor: (async (req, res) => {
@@ -90,6 +91,12 @@ const penguinsController = {
   southernRockhopper: (async (req, res) => {
     const southernRockhopper = await penguinsPhotoModel.southernRockhopper()
     res.render('pages/penguins/southernRockhopper', { photoUrl: southernRockhopper })
+  }),
+
+  addPenguinPhoto: (async (req, res) => {
+    var penguin = req.body
+    const addPenguinPhoto = await penguinsPhotoModel.addPenguinPhoto(penguin)
+    res.redirect('/'+ penguin['penguin_kind'])
   }),
 
 

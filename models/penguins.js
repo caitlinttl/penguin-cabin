@@ -172,6 +172,15 @@ const penguinsPhotoModel = {
     return data
   }),
 
+  addPenguinPhoto: (async (penguin) => {
+    penguinKind = penguin['penguin_kind']
+    photoUrl = penguin['penguin_photo']
+    console.log(penguinKind)
+    console.log(photoUrl)
+    var sheetID = sheetIDs[penguinKind]
+    var data = await addPenguinPhotoData(docID, sheetID, photoUrl);
+  }),
+
 }
   
 module.exports = penguinsPhotoModel
