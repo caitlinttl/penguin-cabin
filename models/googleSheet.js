@@ -26,6 +26,45 @@ async function readPenguinPhotoData(docID, sheetID, credentialsPath = './penguin
     return result;
 };
 
+async function readNewsData(docID, sheetID, credentialsPath = './penguin-cabin-credentials.json') {
+    const result = [];
+    const doc = new GoogleSpreadsheet(docID);
+    const creds = require(credentialsPath);
+    await doc.useServiceAccountAuth(creds);
+    await doc.loadInfo();
+    const sheet = doc.sheetsById[sheetID];
+
+    // getRows
+    const rows = await sheet.getRows();
+    for (row of rows) {
+    result.push(row._rawData);
+    }
+
+    for (r of result) {
+      if ( !r[2] ) {
+        r[2] = 'images/news_default_penguin.jpg'
+      }
+    }
+    
+    return result.reverse();
+};
+
+async function readMessageData(docID, sheetID, credentialsPath = './penguin-cabin-credentials.json') {
+    const result = [];
+    const doc = new GoogleSpreadsheet(docID);
+    const creds = require(credentialsPath);
+    await doc.useServiceAccountAuth(creds);
+    await doc.loadInfo();
+    const sheet = doc.sheetsById[sheetID];
+
+    // getRows
+    const rows = await sheet.getRows();
+    for (row of rows) {
+    result.push(row._rawData);
+    }
+    return result;
+};
+
 
 async function addPenguinPhotoData(docID, sheetID, credentialsPath = './penguin-cabin-credentials.json') {
   const result = [];
@@ -49,6 +88,8 @@ async function addPenguinPhotoData(docID, sheetID, credentialsPath = './penguin-
 
 module.exports = {
   readPenguinPhotoData,
+  readNewsData,
+  readMessageData,
   addPenguinPhotoData,
 };
 

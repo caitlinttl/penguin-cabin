@@ -1,14 +1,16 @@
 var express = require('express');
 var router = express.Router();
 const penguinsController = require('../controllers/penguins')
+const newsController = require('../controllers/news')
+const messageController = require('../controllers/message')
 
 /* GET home page. */
 router.get('/', (req, res) => res.render('pages/index'))
 
 /* GET other pages. */
 router.get('/map', (req, res) => res.render('pages/map'))
-router.get('/news', (req, res) => res.render('pages/news'))
-router.get('/message', (req, res) => res.render('pages/message'))
+router.get('/news', newsController.news)
+router.get('/message', messageController.message)
 
 /* GET edit penguins photo page. */
 // TODO Add for Specified penguin
