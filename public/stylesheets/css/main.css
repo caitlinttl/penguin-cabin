@@ -2939,8 +2939,12 @@ input, select, textarea {
 			
 			h3center {
 				font-size: 1.25em;
-			}			
+			}		
 			
+			h13 {
+				font-size: 0.9em;
+			}
+
 			p {
 				font-size: 1em;
 			}
