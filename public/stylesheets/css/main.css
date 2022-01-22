@@ -10,14 +10,13 @@
 
 @font-face {
 	font-family: "MV Boli"; 
-	src: url("//db.onlinewebfonts.com/t/a7e3822358f6dcb2f986a68cf24721b2.eot"); 
-	src: url("//db.onlinewebfonts.com/t/a7e3822358f6dcb2f986a68cf24721b2.eot?#iefix") format("embedded-opentype"),
-	url("//db.onlinewebfonts.com/t/a7e3822358f6dcb2f986a68cf24721b2.woff2") format("woff2"),
-	url("//db.onlinewebfonts.com/t/a7e3822358f6dcb2f986a68cf24721b2.woff") format("woff"),
-	url("//db.onlinewebfonts.com/t/a7e3822358f6dcb2f986a68cf24721b2.ttf") format("truetype"),
-	url("//db.onlinewebfonts.com/t/a7e3822358f6dcb2f986a68cf24721b2.svg#MV Boli") format("svg") 
+	src: url(webfonts/MV-Boli-V1.eot); 
+	src: url(webfonts/MV-Boli-V1.eot) format("embedded-opentype"),
+	url(webfonts/MV-Boli-V1.woff2) format("woff2"),
+	url(webfonts/MV-Boli-V1.woff) format("woff"),
+	url(webfonts/MV-Boli-V1.ttf) format("truetype"),
+	url(webfonts/MV-Boli-V1.svgd) format("svg") 
 }
-
 
 
 html, body, div, span, applet, object,
