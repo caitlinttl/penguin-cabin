@@ -19,7 +19,7 @@
 
 @font-face {
 	font-family: "Calibri"; 
-	src: url(webfonts/Calibri-Regular.ttf) format("truetype")
+	src: url(webfonts/Calibri-Bold.ttf) format("truetype")
 }
 
 
@@ -2564,6 +2564,9 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
+			p {
+				font-size: 1.1em;
+			}
 	}
 
 /* Large */
@@ -2574,6 +2577,10 @@ input, select, textarea {
 
 			body, input, textarea, select {
 				font-size: 11pt;
+			}
+
+			p {
+				font-size: 1.15em;
 			}
 
 		/* Section/Article */
@@ -2667,6 +2674,10 @@ input, select, textarea {
 
 			html, body {
 				overflow-x: hidden;
+			}
+
+			p {
+				font-size: 1.15em;
 			}
 
 		/* Box */
@@ -2924,6 +2935,10 @@ input, select, textarea {
 
 			h2, h3, h4, h5, h6 {
 				font-size: 1.35em;
+			}
+			
+			p {
+				font-size: 1.15em;
 			}
 
 		/* Button */
