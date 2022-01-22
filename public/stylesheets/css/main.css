@@ -17,6 +17,11 @@
 	url(webfonts/MV-Boli-V1.ttf) format("truetype")
 }
 
+@font-face {
+	font-family: "Calibri"; 
+	src: url(webfonts/Calibri-Regular.ttf) format("truetype")
+}
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
