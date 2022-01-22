@@ -17,10 +17,10 @@
 	url(webfonts/MV-Boli-V1.ttf) format("truetype")
 }
 
-@font-face {
+/* @font-face {
 	font-family: "Calibri"; 
 	src: url(webfonts/Calibri-Regular.ttf) format("truetype")
-}
+} */
 
 
 html, body, div, span, applet, object,
@@ -2565,7 +2565,7 @@ input, select, textarea {
 			}
 
 			p {
-				font-size: 1.1em;
+				font-size: 1.15em;
 			}
 	}
 
@@ -2677,7 +2677,7 @@ input, select, textarea {
 			}
 
 			p {
-				font-size: 1.15em;
+				font-size: 1.1em;
 			}
 
 		/* Box */
@@ -2938,7 +2938,7 @@ input, select, textarea {
 			}
 			
 			p {
-				font-size: 1.15em;
+				font-size: 1em;
 			}
 
 		/* Button */
