@@ -44,6 +44,7 @@ router.get('/snares', penguinsController.snares)
 router.get('/northernRockhopper', penguinsController.northernRockhopper)
 router.get('/southernRockhopper', penguinsController.southernRockhopper)
 
+/* POST add data to database. */
 router.post('/add-pengins-photo', penguinsController.addPenguinPhoto)
 router.post('/add-news', newsController.addNews)
 router.post('/add-message', messageController.addMessage)
