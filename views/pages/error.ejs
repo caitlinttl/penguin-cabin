@@ -1,5 +1,63 @@
-<h2>This page does NOT exist.</h2>
-<a href="/">Back to Penguin Cabin</a>
-<h2><br><%= message %> <%= error.status %></h2>
-<!-- error message -->
-<pre><%= error.stack %></pre>
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	Design by Caitlin
+-->
+<html>
+	<head>
+		<%- include ("../partials/header.ejs") %>	
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Penguin header -->
+			<%- include ("../partials/penguin-header.ejs") %>	
+
+
+			<!-- Main -->
+			<section id="main">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<!-- Portfolio -->
+                            <section>
+                                <header class="major">
+                                    <h2>Page NOT Found</h2>
+                                </header>
+
+                                <div id="editicon">
+                                    <a href="/"><img src="images/icon_penguin_r.png" alt="" title="Home"/></a>
+                                </div>		
+
+
+                                <!-- error message -->
+                                <div class="row">
+                                    <div class="col-12 col-12-medium col-12-small">
+                                        <section class="penguinintrobox">
+                                            <header>
+                                                <h3center><%= message %> <%= error.status %></h3center>
+                                            </header>    
+                                            <h10><pre><%= error.stack %></pre></h10><br>
+                                        </section>    
+                                    </div>    
+                                </div>
+
+                            </section>						
+                        </div>
+					</div>
+				</div>
+			</section>
+
+            <!-- Go to Back -->
+            <div id="gototop">
+                <a title="Go Back" onclick="history.back()" ><h8>Go Back</h8></a>
+            </div>
+            
+			<!-- Penguin Footer -->
+			<%- include ("../partials/footer.ejs") %>	
+	</div>
+
+	<!-- Scripts -->
+	<%- include ("../partials/scripts.ejs") %>	
+</body>
+</html>
