@@ -95,7 +95,12 @@ const penguinsController = {
 
   addPenguinPhoto: (async (req, res) => {
     var penguin = req.body
-    const clientIp = req.connection.remoteAddress.replace(/^.*:/, "");
+    // const clientIp = req.connection.remoteAddress.replace(/^.*:/, "");
+    var clientIp =
+    (req.headers["x-forwarded-for"] || "").split(",").pop() ||
+    req.connection.remoteAddress ||
+    req.socket.remoteAddress ||
+    req.connection.socket.remoteAddress;
     const addPenguinPhoto = await penguinsPhotoModel.addPenguinPhoto(penguin, clientIp)
     res.redirect('/'+ penguin['penguin_kind'])
   }),
