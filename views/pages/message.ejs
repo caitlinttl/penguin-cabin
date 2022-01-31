@@ -8,21 +8,24 @@
 		<%- include ("../partials/header.ejs") %>	
 	</head>
 	<body class="homepage is-preload">
+
+		<%- include ("../partials/loading.ejs") %>	
+
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<section id="header">
 
 					<!-- Logo -->
-						<h1><a href="/">Penguin Cabin</a></h1>
+						<h1><a id="goToHome" href="/">Penguin Cabin</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="/">Penguins</a></li>
-								<li><a href="/map">Map</a></li>
-								<li><a href="/news">News</a></li>
-								<li class="current"><a href="/message">Message</a></li>
+								<li><a id="goToPenguin" href="/">Penguins</a></li>
+								<li><a id="goToMap" href="/map">Map</a></li>
+								<li><a id="goToNews" href="/news">News</a></li>
+								<li class="current"><a id="goToMessage" href="/message">Message</a></li>
 							</ul>
 						</nav>
 
@@ -41,7 +44,7 @@
 									</header>
 									
 									<div id="editicon">
-										<a href="/add-message"><img src="images/edit.png" alt="" title="Write a Message"/></a>
+										<a id="goToOtherPage" href="/add-message"><img src="images/edit.png" alt="" title="Write a Message"/></a>
 									</div>
 
 									<div class="row">

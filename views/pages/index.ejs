@@ -8,21 +8,24 @@
 		<%- include ("../partials/header.ejs") %>	
 	</head>
 	<body class="homepage is-preload">
+
+		<%- include ("../partials/loading.ejs") %>	
+
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<section id="header">
 
 					<!-- Logo -->
-						<h1><a href="/">Penguin Cabin</a></h1>
+						<h1><a id="goToHome" href="/">Penguin Cabin</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li class="current"><a href="/">Penguins</a></li>
-								<li><a href="/map">Map</a></li>
-								<li><a href="/news">News</a></li>
-								<li><a href="/message">Message</a></li>
+								<li class="current"><a id="goToPenguin" href="/">Penguins</a></li>
+								<li><a id="goToMap" href="/map">Map</a></li>
+								<li><a id="goToNews" href="/news">News</a></li>
+								<li><a id="goToMessage" href="/message">Message</a></li>
 							</ul>
 						</nav>
 
@@ -42,109 +45,109 @@
 										<div class="row">
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/emperor"><img src="images/a1_emperor.png" alt="" /></a>
+													<a id="goToEmperor" class="image featured" href="/emperor"><img src="images/a1_emperor.png" alt="" /></a>
 													<h7>帝王</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/king" ><img src="images/a2_king.png" alt="" /></a>
+													<a id="goToKing" class="image featured" href="/king" ><img src="images/a2_king.png" alt="" /></a>
 													<h7>國王</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/littleBlue"><img src="images/a6_littleblue.png" alt="" /></a>
+													<a id="goToLittleBlue" class="image featured" href="/littleBlue"><img src="images/a6_littleblue.png" alt="" /></a>
 													<h7>小藍</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/adelie"><img src="images/a3_adelie.png" alt="" /></a>
+													<a id="goToAdelie" class="image featured" href="/adelie"><img src="images/a3_adelie.png" alt="" /></a>
 													<h7>阿德利</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/chinstrap"><img src="images/a4_chinstrap.png" alt="" /></a>
+													<a id="goToChinstrap" class="image featured" href="/chinstrap"><img src="images/a4_chinstrap.png" alt="" /></a>
 													<h7>頰帶</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/gentoo"><img src="images/a5_gento.png" alt="" /></a>
+													<a id="goToGentoo" class="image featured" href="/gentoo"><img src="images/a5_gento.png" alt="" /></a>
 													<h7>巴布亞</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/african"><img src="images/a10_africa.png" alt="" /></a>
+													<a id="goToAfrican" class="image featured" href="/african"><img src="images/a10_africa.png" alt="" /></a>
 													<h7>黑腳</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/humboldt"><img src="images/a9_humboldt.png" alt="" /></a>
+													<a id="goToHumboldt" class="image featured" href="/humboldt"><img src="images/a9_humboldt.png" alt="" /></a>
 													<h7>洪堡德</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/magellanic"><img src="images/a17_magellanic.png" alt="" /></a>
+													<a id="goToMagellanic" class="image featured" href="/magellanic"><img src="images/a17_magellanic.png" alt="" /></a>
 													<h7>麥哲倫</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/galapagos"><img src="images/a8_galapaga.png" alt="" /></a>
+													<a id="goToGalapagos" class="image featured" href="/galapagos"><img src="images/a8_galapaga.png" alt="" /></a>
 													<h7>加拉帕戈</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/macaroni"><img src="images/a7_macaroni.png" alt="" /></a>
+													<a id="goToMacaroni" class="image featured" href="/macaroni"><img src="images/a7_macaroni.png" alt="" /></a>
 													<h7>馬可羅尼</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/royal"><img src="images/a18_royol.png" alt="" /></a>
+													<a id="goToRoyal" class="image featured" href="/royal"><img src="images/a18_royol.png" alt="" /></a>
 													<h7>皇家</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/yellowEyed"><img src="images/a16_yelloweyed.png" alt="" /></a>
+													<a id="goToYellowEyed" class="image featured" href="/yellowEyed"><img src="images/a16_yelloweyed.png" alt="" /></a>
 													<h7>黃眼</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/fiordland"><img src="images/a14_fiordland.png" alt="" /></a>
+													<a id="goToFiordland" class="image featured" href="/fiordland"><img src="images/a14_fiordland.png" alt="" /></a>
 													<h7>福德蘭</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/erectCrested"><img src="images/a15_erectcrested.png" alt="" /></a>
+													<a id="goToErectCrested" class="image featured" href="/erectCrested"><img src="images/a15_erectcrested.png" alt="" /></a>
 													<h7>冠毛</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/snares"><img src="images/a11_snares.png" alt="" /></a>
+													<a id="goToSnares" class="image featured" href="/snares"><img src="images/a11_snares.png" alt="" /></a>
 													<h7>史納爾島</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/northernRockhopper"><img src="images/a13_northrock.png" alt="" /></a>
+													<a id="goToNorthernRockhopper" class="image featured" href="/northernRockhopper"><img src="images/a13_northrock.png" alt="" /></a>
 													<h7>北跳岩</h7>
 												</section>
 											</div>
 											<div class="col-2 col-4-medium col-4-small">
 												<section class="penguinpic">
-													<a class="image featured" href="/southernRockhopper"><img src="images/a12_southrock.png" alt="" /></a>
+													<a id="goToSouthernRockhopper" class="image featured" href="/southernRockhopper"><img src="images/a12_southrock.png" alt="" /></a>
 													<h7>南跳岩</h7>
 												</section>
 											</div>
