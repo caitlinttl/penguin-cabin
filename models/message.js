@@ -19,16 +19,18 @@ const messageModel = {
     return data
   }),
 
-  addMessage: (async (message) => {
+  addMessage: (async (message, clientIp) => {
     userName = message['user_name']
     userMessage = message['user_message']
     timestamp = moment().tz("Asia/Taipei").format("YYYY-MM-DD HH:mm");
+    clientIp = clientIp
 
     console.log(userName)
     console.log(userMessage)
     console.log(timestamp)
+    console.log(clientIp)
 
-    var data = await addMessageData(docID, sheetID, userName, userMessage, timestamp);
+    var data = await addMessageData(docID, sheetID, userName, userMessage, timestamp, clientIp);
   }),
 
 }

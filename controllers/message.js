@@ -1,5 +1,6 @@
 // import message data from model
 const messageModel = require('../models/message')
+const getClientIpModel = require('./getClientIp')
 
 const messageController = {
   message: (async (req, res) => {
@@ -9,7 +10,8 @@ const messageController = {
 
   addMessage: (async (req, res) => {
     var message = req.body
-    const addMessage = await messageModel.addMessage(message)
+    const clientIp = getClientIpModel.getClientIp(req)
+    const addMessage = await messageModel.addMessage(message, clientIp)
     res.redirect('/message')
   }),
 }

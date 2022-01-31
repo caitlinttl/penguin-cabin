@@ -16,20 +16,22 @@ const newsModel = {
     return data
   }),
 
-  addNews: (async (news) => {
+  addNews: (async (news, clientIp) => {
     newsTitle = news['news_title']
     newsUrl = news['news_url']
     newsPhotoUrl = news['news_photo_url']
     newsContent = news['news_content']
     newsTags = news['news_tags']
+    clientIp = clientIp
 
     console.log(newsTitle)
     console.log(newsUrl)
     console.log(newsPhotoUrl)
     console.log(newsContent)
     console.log(newsTags)
+    console.log(clientIp)
 
-    var data = await addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags);
+    var data = await addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags, clientIp);
   }),
   
 }

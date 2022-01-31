@@ -90,7 +90,7 @@ async function addPenguinPhotoData(docID, sheetID, photoUrl, clientIp, credentia
 
 };
 
-async function addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags, credentialsPath=keyPath) {
+async function addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags, clientIp, credentialsPath=keyPath) {
   const doc = new GoogleSpreadsheet(docID);
   const creds = require(credentialsPath);
   await doc.useServiceAccountAuth(creds);
@@ -99,12 +99,12 @@ async function addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, new
   
   // addRow
   const moreRows = await sheet.addRows([
-    { news_title: newsTitle, news_url: newsUrl, news_photo_url: newsPhotoUrl, news_content: newsContent, news_tags: newsTags },
+    { news_title: newsTitle, news_url: newsUrl, news_photo_url: newsPhotoUrl, news_content: newsContent, news_tags: newsTags, user_ip: clientIp },
   ]);
 
 };
 
-async function addMessageData(docID, sheetID, userName, userMessage, timestamp, credentialsPath=keyPath) {
+async function addMessageData(docID, sheetID, userName, userMessage, timestamp, clientIp, credentialsPath=keyPath) {
   const doc = new GoogleSpreadsheet(docID);
   const creds = require(credentialsPath);
   await doc.useServiceAccountAuth(creds);
@@ -113,7 +113,7 @@ async function addMessageData(docID, sheetID, userName, userMessage, timestamp, 
 
 // addRow
   const moreRows = await sheet.addRows([
-    { user_name: userName, user_message: userMessage, timestamp: timestamp},
+    { user_name: userName, user_message: userMessage, timestamp: timestamp, user_ip: clientIp},
   ]);
 
 };
