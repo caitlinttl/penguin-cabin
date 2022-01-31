@@ -76,7 +76,7 @@ async function readMessageData(docID, sheetID, credentialsPath=keyPath) {
 };
 
 
-async function addPenguinPhotoData(docID, sheetID, photoUrl, clientIp, credentialsPath=keyPath) {
+async function addPenguinPhotoData(docID, sheetID, photoUrl, penguinPhotoContributor, clientIp, credentialsPath=keyPath) {
   const doc = new GoogleSpreadsheet(docID);
   const creds = require(credentialsPath);
   await doc.useServiceAccountAuth(creds);
@@ -85,12 +85,12 @@ async function addPenguinPhotoData(docID, sheetID, photoUrl, clientIp, credentia
 
 // addRow
   const moreRows = await sheet.addRows([
-      { penguin_photo_url: photoUrl, user_ip: clientIp }
+      { penguin_photo_url: photoUrl, user_ip: clientIp, penguin_photo_contributor: penguinPhotoContributor }
   ]);
 
 };
 
-async function addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags, clientIp, credentialsPath=keyPath) {
+async function addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags, newsContributor, clientIp, credentialsPath=keyPath) {
   const doc = new GoogleSpreadsheet(docID);
   const creds = require(credentialsPath);
   await doc.useServiceAccountAuth(creds);
@@ -99,7 +99,7 @@ async function addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, new
   
   // addRow
   const moreRows = await sheet.addRows([
-    { news_title: newsTitle, news_url: newsUrl, news_photo_url: newsPhotoUrl, news_content: newsContent, news_tags: newsTags, user_ip: clientIp },
+    { news_title: newsTitle, news_url: newsUrl, news_photo_url: newsPhotoUrl, news_content: newsContent, news_tags: newsTags, news_contributor: newsContributor, user_ip: clientIp },
   ]);
 
 };

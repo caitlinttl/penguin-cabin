@@ -22,6 +22,7 @@ const newsModel = {
     newsPhotoUrl = news['news_photo_url']
     newsContent = news['news_content']
     newsTags = news['news_tags']
+    newsContributor = news['news_contributor']
     clientIp = clientIp
 
     console.log(newsTitle)
@@ -29,9 +30,10 @@ const newsModel = {
     console.log(newsPhotoUrl)
     console.log(newsContent)
     console.log(newsTags)
+    console.log(newsContributor)
     console.log(clientIp)
 
-    var data = await addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags, clientIp);
+    var data = await addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags, newsContributor, clientIp);
   }),
   
 }
