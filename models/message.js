@@ -5,6 +5,7 @@ const moment = require('moment-timezone');
 
 const { readMessageData } = require('./googleSheet.js');
 const { addMessageData } = require('./googleSheet.js');
+const lineNotifyModel = require('./lineNotify.js');
 
 
 const docID = '1pk2LOyFakukUv1-ew1Bnt0Du5vHqMzyKteebQMaK8EQ'
@@ -30,6 +31,7 @@ const messageModel = {
     console.log(timestamp)
     console.log(clientIp)
 
+    var notify = lineNotifyModel.messageNotify(userName, timestamp, clientIp);
     var data = await addMessageData(docID, sheetID, userName, userMessage, timestamp, clientIp);
   }),
 

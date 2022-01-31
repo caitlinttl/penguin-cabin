@@ -9,7 +9,7 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
  * @param  {String} credentialsPath the credentials path defalt is './credentials.json'
  */
 
- const keyPath = './penguin-cabin-credentials.json'
+const keyPath = './penguin-cabin-credentials.json'
 
 async function readPenguinPhotoData(docID, sheetID, credentialsPath=keyPath) {
     const result = [];

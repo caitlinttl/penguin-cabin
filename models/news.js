@@ -5,6 +5,7 @@ const moment = require('moment-timezone');
 
 const { readNewsData } = require('./googleSheet.js');
 const { addNewsData } = require('./googleSheet.js');
+const lineNotifyModel = require('./lineNotify.js');
 
 const docID = '1pk2LOyFakukUv1-ew1Bnt0Du5vHqMzyKteebQMaK8EQ'
 const sheetID = '0'
@@ -26,7 +27,7 @@ const newsModel = {
     newsTags = news['news_tags']
     newsContributor = news['news_contributor']
     clientIp = clientIp
-    timestamp = moment().tz("Asia/Taipei").format("YYYY-MM-DD HH:mm");
+    timestamp = moment().tz("Asia/Taipei").format("YYYY-MM-DD HH:mm:ss");
 
     console.log(newsTitle)
     console.log(newsUrl)
@@ -37,6 +38,7 @@ const newsModel = {
     console.log(clientIp)
     console.log(timestamp)
 
+    var notify = lineNotifyModel.newsNotify(newsTitle, timestamp, clientIp);
     var data = await addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags, newsContributor, clientIp, timestamp);
   }),
   

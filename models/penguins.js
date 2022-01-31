@@ -5,6 +5,7 @@ const moment = require('moment-timezone');
 
 const { readPenguinPhotoData } = require('./googleSheet.js');
 const { addPenguinPhotoData } = require('./googleSheet.js');
+const lineNotifyModel = require('./lineNotify.js');
 
 const docID = '1oeyw47FDn__ywBEOvuxGvero-pvUQhrY1TpeD25gYgM'
 const sheetIDs = {
@@ -179,7 +180,7 @@ const penguinsPhotoModel = {
     photoUrl = penguin['penguin_photo']
     penguinPhotoContributor = penguin['penguin_photo_contributor']
     clientIp = clientIp
-    timestamp = moment().tz("Asia/Taipei").format("YYYY-MM-DD HH:mm");
+    timestamp = moment().tz("Asia/Taipei").format("YYYY-MM-DD HH:mm:ss");
 
     console.log(penguinKind)
     console.log(photoUrl)
@@ -188,6 +189,8 @@ const penguinsPhotoModel = {
     console.log(timestamp)
 
     var sheetID = sheetIDs[penguinKind]
+
+    var notify = lineNotifyModel.penguinPhotoNotify(penguinKind, timestamp, clientIp);
     var data = await addPenguinPhotoData(docID, sheetID, photoUrl, penguinPhotoContributor, clientIp, timestamp);
   }),
 
