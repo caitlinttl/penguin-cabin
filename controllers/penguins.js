@@ -1,5 +1,6 @@
 // import penguins data from model
 const penguinsPhotoModel = require('../models/penguins')
+const getClientIpModel = require('./getClientIp')
 const bodyParser = require('body-parser')
 
 const penguinsController = {
@@ -95,12 +96,7 @@ const penguinsController = {
 
   addPenguinPhoto: (async (req, res) => {
     var penguin = req.body
-    // const clientIp = req.connection.remoteAddress.replace(/^.*:/, "");
-    var clientIp =
-    (req.headers["x-forwarded-for"] || "").split(",").pop() ||
-    req.connection.remoteAddress ||
-    req.socket.remoteAddress ||
-    req.connection.socket.remoteAddress;
+    const clientIp = getClientIpModel.getClientIp(req)
     const addPenguinPhoto = await penguinsPhotoModel.addPenguinPhoto(penguin, clientIp)
     res.redirect('/'+ penguin['penguin_kind'])
   }),
