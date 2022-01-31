@@ -76,7 +76,7 @@ async function readMessageData(docID, sheetID, credentialsPath=keyPath) {
 };
 
 
-async function addPenguinPhotoData(docID, sheetID, photoUrl, credentialsPath=keyPath) {
+async function addPenguinPhotoData(docID, sheetID, photoUrl, clientIp, credentialsPath=keyPath) {
   const doc = new GoogleSpreadsheet(docID);
   const creds = require(credentialsPath);
   await doc.useServiceAccountAuth(creds);
@@ -85,7 +85,7 @@ async function addPenguinPhotoData(docID, sheetID, photoUrl, credentialsPath=key
 
 // addRow
   const moreRows = await sheet.addRows([
-      { penguin_photo_url: photoUrl }
+      { penguin_photo_url: photoUrl, user_ip: clientIp }
   ]);
 
 };

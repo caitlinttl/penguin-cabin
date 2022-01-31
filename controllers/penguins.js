@@ -95,7 +95,8 @@ const penguinsController = {
 
   addPenguinPhoto: (async (req, res) => {
     var penguin = req.body
-    const addPenguinPhoto = await penguinsPhotoModel.addPenguinPhoto(penguin)
+    const clientIp = req.connection.remoteAddress.replace(/^.*:/, "");
+    const addPenguinPhoto = await penguinsPhotoModel.addPenguinPhoto(penguin, clientIp)
     res.redirect('/'+ penguin['penguin_kind'])
   }),
 

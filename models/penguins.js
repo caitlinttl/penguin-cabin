@@ -172,13 +172,15 @@ const penguinsPhotoModel = {
     return data
   }),
 
-  addPenguinPhoto: (async (penguin) => {
+  addPenguinPhoto: (async (penguin, clientIp) => {
     penguinKind = penguin['penguin_kind']
     photoUrl = penguin['penguin_photo']
+    clientIp = clientIp
     console.log(penguinKind)
     console.log(photoUrl)
+    console.log(clientIp)
     var sheetID = sheetIDs[penguinKind]
-    var data = await addPenguinPhotoData(docID, sheetID, photoUrl);
+    var data = await addPenguinPhotoData(docID, sheetID, photoUrl, clientIp);
   }),
 
 }
