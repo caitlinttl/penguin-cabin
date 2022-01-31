@@ -1,6 +1,8 @@
 // news.js
 // getdata from google sheet
 
+const moment = require('moment-timezone');
+
 const { readNewsData } = require('./googleSheet.js');
 const { addNewsData } = require('./googleSheet.js');
 
@@ -24,6 +26,7 @@ const newsModel = {
     newsTags = news['news_tags']
     newsContributor = news['news_contributor']
     clientIp = clientIp
+    timestamp = moment().tz("Asia/Taipei").format("YYYY-MM-DD HH:mm");
 
     console.log(newsTitle)
     console.log(newsUrl)
@@ -32,8 +35,9 @@ const newsModel = {
     console.log(newsTags)
     console.log(newsContributor)
     console.log(clientIp)
+    console.log(timestamp)
 
-    var data = await addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags, newsContributor, clientIp);
+    var data = await addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags, newsContributor, clientIp, timestamp);
   }),
   
 }

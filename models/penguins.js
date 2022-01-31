@@ -1,6 +1,8 @@
 // penguins.js
 // getdata from google sheet
 
+const moment = require('moment-timezone');
+
 const { readPenguinPhotoData } = require('./googleSheet.js');
 const { addPenguinPhotoData } = require('./googleSheet.js');
 
@@ -177,14 +179,16 @@ const penguinsPhotoModel = {
     photoUrl = penguin['penguin_photo']
     penguinPhotoContributor = penguin['penguin_photo_contributor']
     clientIp = clientIp
+    timestamp = moment().tz("Asia/Taipei").format("YYYY-MM-DD HH:mm");
 
     console.log(penguinKind)
     console.log(photoUrl)
     console.log(clientIp)
     console.log(penguinPhotoContributor)
+    console.log(timestamp)
 
     var sheetID = sheetIDs[penguinKind]
-    var data = await addPenguinPhotoData(docID, sheetID, photoUrl, penguinPhotoContributor, clientIp);
+    var data = await addPenguinPhotoData(docID, sheetID, photoUrl, penguinPhotoContributor, clientIp, timestamp);
   }),
 
 }
