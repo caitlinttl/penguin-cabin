@@ -9,14 +9,21 @@
     function goto() {
 		$("#status").delay(50).fadeIn(100);
 		$("#preloader").delay(50).fadeIn(100);
-        $("#status").delay(500).fadeOut(350);
-        $("#preloader").delay(500).fadeOut(350);	    
+        
+        // for back
+        $("#status").delay(300).fadeOut(100);
+        $("#preloader").delay(300).fadeOut(100);	    
     }
 
     // button
     $('#goToOtherPage').click(function(){
         console.log('Go to other page')
-		goto();
+        $("#status").delay(50).fadeIn(100);
+		$("#preloader").delay(50).fadeIn(100);
+        
+        // for back
+        $("#status").delay(2500).fadeOut(100);
+        $("#preloader").delay(2500).fadeOut(100);	
     });
 
     // title
