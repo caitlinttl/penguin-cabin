@@ -58,6 +58,7 @@
 														<h12><%= message[i][2]%></h12>
 													</header>
 													<% var data = message[i][1] %>
+													<% var data = data.replace(/</g, '&lt;').replace(/>/g, '&gt;') %>
 													<p><%- data.replace(/(?:\r\n|\r|\n)/g, '<br>') %></p>
 												</section>
 											</div>

@@ -7,6 +7,9 @@ const { readMessageData } = require('./googleSheet.js');
 const { addMessageData } = require('./googleSheet.js');
 const lineNotifyModel = require('./lineNotify.js');
 
+// function sanitize(input) {
+//   return input.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+// }
 
 const docID = '1pk2LOyFakukUv1-ew1Bnt0Du5vHqMzyKteebQMaK8EQ'
 const sheetID = '717436060'
@@ -17,6 +20,9 @@ const messageModel = {
     var data = await readMessageData(docID, sheetID);
     console.log('message')
     console.log(data)
+    // Not entirely sure the message model here... but try it.
+    // Seems to be [0], [1], [2]
+    // return data.map(datum => sanitize(datum));
     return data
   }),
 
