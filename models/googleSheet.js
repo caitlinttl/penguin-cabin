@@ -28,7 +28,7 @@ async function readPenguinPhotoData(docID, sheetID, credentialsPath=keyPath) {
 };
 
 async function readNewsData(docID, sheetID, credentialsPath=keyPath) {
-    const result = [];
+    var result = [];
     const doc = new GoogleSpreadsheet(docID);
     const creds = require(credentialsPath);
     await doc.useServiceAccountAuth(creds);
