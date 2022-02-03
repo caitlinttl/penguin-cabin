@@ -48,8 +48,13 @@ async function readNewsData(docID, sheetID, credentialsPath=keyPath) {
       }
     }
 
-    // reverse order
-    return result.reverse();
+    // reserve top and reverse order
+    top = result[0]
+    result.shift()
+    result = result.reverse()
+    result.unshift(top)
+
+    return result;    
 };
 
 async function readMessageData(docID, sheetID, credentialsPath=keyPath) {
