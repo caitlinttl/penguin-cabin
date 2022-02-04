@@ -1,6 +1,6 @@
 // import news data from model
 const newsModel = require('../models/news')
-const getClientIpModel = require('./getClientIp')
+const getClientIpModel = require('../models/getClientIp')
 
 const newsController = {
   news: (async (req, res) => {

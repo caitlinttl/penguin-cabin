@@ -1,6 +1,6 @@
 // import penguins data from model
 const penguinsPhotoModel = require('../models/penguins')
-const getClientIpModel = require('./getClientIp')
+const getClientIpModel = require('../models/getClientIp')
 const bodyParser = require('body-parser')
 
 const penguinsController = {
