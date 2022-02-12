@@ -11,6 +11,7 @@ router.get('/', (req, res) => res.render('pages/index'))
 router.get('/map', (req, res) => res.render('pages/map'))
 router.get('/news', newsController.news)
 router.get('/message', messageController.message)
+router.get('/caitlin', (req, res) => res.render('pages/caitlin'))
 
 /* GET edit penguins photo page. */
 // TODO Add for Specified penguin

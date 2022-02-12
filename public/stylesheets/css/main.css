@@ -2554,6 +2554,10 @@ input, select, textarea {
 			padding: 0.85em 2.25em 0.85em 2.25em;
 		}
 
+		#copyright a {
+			color: #353434;
+		}
+
 /* XLarge */
 
 	@media screen and (max-width: 1680px) {
