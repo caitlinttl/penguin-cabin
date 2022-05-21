@@ -13,19 +13,7 @@ router.get('/news', newsController.news)
 router.get('/message', messageController.message)
 router.get('/caitlin', (req, res) => res.render('pages/caitlin'))
 
-/* GET edit penguins photo page. */
-// TODO Add for Specified penguin
-router.get('/add-pengins-photo', function(req, res, next) {
-  res.render('pages/add-pengins-photo', { penguin: 'Specified' });
-});
-
-/* GET edit news page. */
-router.get('/add-news', (req, res) => res.render('pages/add-news'))
-
-/* GET edit message page. */
-router.get('/add-message', (req, res) => res.render('pages/add-message'))
-
-/* GET edit penguins page. */
+/* GET penguins page. */
 router.get('/emperor', penguinsController.emperor)
 router.get('/king', penguinsController.king)
 router.get('/littleBlue', penguinsController.littleBlue)
@@ -45,8 +33,20 @@ router.get('/snares', penguinsController.snares)
 router.get('/northernRockhopper', penguinsController.northernRockhopper)
 router.get('/southernRockhopper', penguinsController.southernRockhopper)
 
+/* GET edit penguin photo page. */
+// TODO Add for Specified penguin
+router.get('/add-penguin-photo', function(req, res, next) {
+  res.render('pages/add-penguin-photo', { penguin: 'Specified' });
+});
+
+/* GET edit news page. */
+router.get('/add-news', (req, res) => res.render('pages/add-news'))
+
+/* GET edit message page. */
+router.get('/add-message', (req, res) => res.render('pages/add-message'))
+
 /* POST add data to database. */
-router.post('/add-pengins-photo', penguinsController.addPenguinPhoto)
+router.post('/add-penguin-photo', penguinsController.addPenguinPhoto)
 router.post('/add-news', newsController.addNews)
 router.post('/add-message', messageController.addMessage)
 
