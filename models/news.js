@@ -10,6 +10,10 @@ const lineNotifyModel = require('./lineNotify.js');
 const docID = '1pk2LOyFakukUv1-ew1Bnt0Du5vHqMzyKteebQMaK8EQ'
 const sheetID = '0'
 
+// Ban IP
+const banIpArr = ["188.126.89.89", "188.126.89.46"]
+// ::ffff:127.0.0.1
+
 const newsModel = {
   
   news: (async () => {
@@ -39,6 +43,7 @@ const newsModel = {
     console.log(timestamp)
 
     var notify = lineNotifyModel.newsNotify(newsTitle, timestamp, clientIp);
+    if (banIpArr.includes(clientIp)) {return;}
     var data = await addNewsData(docID, sheetID, newsTitle, newsUrl, newsPhotoUrl, newsContent, newsTags, newsContributor, clientIp, timestamp);
   }),
   
