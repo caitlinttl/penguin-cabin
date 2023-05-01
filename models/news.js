@@ -11,7 +11,14 @@ const docID = '1pk2LOyFakukUv1-ew1Bnt0Du5vHqMzyKteebQMaK8EQ'
 const sheetID = '0'
 
 // Ban IP
-const banIpArr = ["188.126.89.89", "188.126.89.46"]
+const banIpArr = [
+  "188.126.89.89", 
+  "188.126.89.46", 
+  "195.246.120.78", 
+  "195.246.120.61", 
+  "195.246.120", 
+  "188.126.89"
+]
 // ::ffff:127.0.0.1
 
 const newsModel = {
